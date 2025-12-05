@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhiteMint</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap');
+        
+        /* Redaction fonts */
+        @font-face {
+            font-family: 'Redaction10';
+            src: url('fonts/Redaction10-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Redaction35';
+            src: url('fonts/Redaction35-Regular.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        .font-redaction-10 {
+            font-family: 'Redaction10', Georgia, serif;
+        }
+        
+        .font-redaction-35 {
+            font-family: 'Redaction35', Georgia, serif;
+        }
+        
+        .font-jost {
+            font-family: 'Jost', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white min-h-screen relative">
+    
+    <div class="absolute inset-0 pointer-events-none z-0 min-h-full">
+
+        <div class="absolute h-full w-px bg-[#3b3b43] left-[107px]"></div>
+        <div class="absolute h-full w-px bg-[#3b3b43] left-[calc(100%-107px)]"></div>
+
+        <div class="absolute w-full h-px bg-[#3b3b43] top-[90px]"></div>
+        <div class="absolute w-full h-px bg-[#3b3b43] top-[340px]"></div>
+    </div>
+
+    <div class="relative z-10">
+        
+        <header class="flex justify-center items-center py-8 gap-8 text-xl font-redaction-10">
+            <a href="#catalog" class="hover:text-gray-400 transition">catalog</a>
+            <a href="#cart" class="hover:text-gray-400 transition">cart</a>
+            <a href="pages/login.html" class="hover:text-gray-400 transition">login</a>
+        </header>
+
+        <section class="text-center px-4 mt-8">
+            <h1 class="text-6xl font-redaction-35 mb-6">WhiteMint</h1>
+            <p class="font-jost text-xl max-w-md mx-auto leading-relaxed">
+                a showcase of unique digital artworks. Explore collections, view NFT details, and build your personal cart.
+            </p>
+        </section>
+
+        <section class="mt-24 px-[132px]">
+            <h2 class="text-3xl font-redaction-35 mb-8">Best of week</h2>
+            
+            <div class="grid grid-cols-5 gap-10">
+                
+                <div class="bg-[#d9d9d9] h-[250px] rounded-[20px] hover:scale-105 transition-transform cursor-pointer"></div>
+                <div class="bg-[#d9d9d9] h-[250px] rounded-[20px] hover:scale-105 transition-transform cursor-pointer"></div>
+                <div class="bg-[#d9d9d9] h-[250px] rounded-[20px] hover:scale-105 transition-transform cursor-pointer"></div>
+                <div class="bg-[#d9d9d9] h-[250px] rounded-[20px] hover:scale-105 transition-transform cursor-pointer"></div>
+                <div class="bg-[#d9d9d9] h-[250px] rounded-[20px] hover:scale-105 transition-transform cursor-pointer"></div>
+                
+                <div class="bg-[#d9d9d9] h-[250px] rounded-[20px] hover:scale-105 transition-transform cursor-pointer"></div>
+                <div class="bg-[#d9d9d9] h-[250px] rounded-[20px] hover:scale-105 transition-transform cursor-pointer"></div>
+                <div class="bg-[#d9d9d9] h-[250px] rounded-[20px] hover:scale-105 transition-transform cursor-pointer"></div>
+                <div class="bg-[#d9d9d9] h-[250px] rounded-[20px] hover:scale-105 transition-transform cursor-pointer"></div>
+                <div class="bg-[#d9d9d9] h-[250px] rounded-[20px] hover:scale-105 transition-transform cursor-pointer"></div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
