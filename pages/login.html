@@ -7,29 +7,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap');
-        
         @font-face {
             font-family: 'Redaction10';
             src: url('../fonts/Redaction10-Regular.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
-        
         @font-face {
             font-family: 'Redaction35';
             src: url('../fonts/Redaction35-Regular.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
-        
         .font-redaction-10 {
             font-family: 'Redaction10', Georgia, serif;
         }
-        
         .font-redaction-35 {
             font-family: 'Redaction35', Georgia, serif;
         }
-        
         .font-jost {
             font-family: 'Jost', sans-serif;
         }
@@ -40,7 +35,6 @@
     <div class="absolute inset-0 pointer-events-none z-0 min-h-full">
         <div class="absolute h-full w-px bg-[#3b3b43] left-[107px]"></div>
         <div class="absolute h-full w-px bg-[#3b3b43] left-[calc(100%-107px)]"></div>
-        
         <div class="absolute w-full h-px bg-[#3b3b43] top-[90px]"></div>
         <div class="absolute w-full h-px bg-[#3b3b43] top-[650px]"></div>
     </div>
@@ -56,7 +50,7 @@
         <section class="flex flex-col items-center justify-center px-4 mt-16">
             <h1 class="text-6xl font-redaction-35 mb-12">Login</h1>
             
-            <form class="w-full max-w-sm flex flex-col gap-6" onsubmit="return false;">
+            <form class="w-full max-w-sm flex flex-col gap-6" onsubmit="event.preventDefault(); window.location.href='profile.html';">
                 
                 <div class="flex flex-col gap-2">
                     <label for="email" class="text-xl font-redaction-10">email</label>
