@@ -8,7 +8,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400&display=swap');
         
-        /* Redaction fonts */
         @font-face {
             font-family: 'Redaction10';
             src: url('../fonts/Redaction10-Regular.otf') format('opentype');
@@ -38,7 +37,6 @@
 </head>
 <body class="bg-zinc-950 text-white min-h-screen relative">
     
-    <!-- Grid Background Lines -->
     <div class="absolute inset-0 pointer-events-none z-0 min-h-full">
         <div class="absolute h-full w-px bg-[#3b3b43] left-[107px]"></div>
         <div class="absolute h-full w-px bg-[#3b3b43] left-[calc(100%-107px)]"></div>
@@ -47,24 +45,19 @@
         <div class="absolute w-full h-px bg-[#3b3b43] top-[650px]"></div>
     </div>
 
-    <!-- Main Content -->
     <div class="relative z-10">
         
-        <!-- Header Navigation -->
         <header class="flex justify-center items-center py-8 gap-8 text-xl font-redaction-10">
             <a href="../index.html#catalog" class="hover:text-gray-400 transition">catalog</a>
             <a href="../index.html#cart" class="hover:text-gray-400 transition">cart</a>
             <a href="login.html" class="hover:text-gray-400 transition">login</a>
         </header>
 
-        <!-- Login Section -->
         <section class="flex flex-col items-center justify-center px-4 mt-16">
             <h1 class="text-6xl font-redaction-35 mb-12">Login</h1>
             
-            <!-- Login Form -->
             <form class="w-full max-w-sm flex flex-col gap-6" onsubmit="return false;">
                 
-                <!-- Email Field -->
                 <div class="flex flex-col gap-2">
                     <label for="email" class="text-xl font-redaction-10">email</label>
                     <input 
@@ -76,7 +69,6 @@
                     />
                 </div>
                 
-                <!-- Password Field -->
                 <div class="flex flex-col gap-2">
                     <label for="password" class="text-xl font-redaction-10">password</label>
                     <input 
@@ -88,7 +80,6 @@
                     />
                 </div>
                 
-                <!-- Enter Button -->
                 <button 
                     type="submit"
                     class="border border-[#3b3b43] rounded-[10px] h-[55px] text-3xl font-redaction-10 hover:bg-white hover:text-zinc-950 transition-all mt-4 cursor-pointer"
